@@ -1,0 +1,355 @@
+.calculator {
+	margin-top: 40px;
+	@media (max-width: 767px){
+		margin-top: 40px;
+	}
+	img.circle-back-v {
+		top: 0;
+		left: auto;
+		right: 0;
+	}
+	img.circle-back-b {
+		left: 0;
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		width: 1146px;
+		background: #09031B;
+		border: 5px solid #7231FF;
+		border-radius: 10px;
+		margin: 0 auto;
+		padding: 40px;
+		@media (max-width: 1919px){
+			width: 1029px;
+		}
+		@media (max-width: 1439px){
+			width: 924px;
+		}
+		@media (max-width: 1023px){
+			width: 728px;
+			padding: 30px 20px;
+			align-items: center;
+		}
+		@media (max-width: 767px){
+			width: 440px;
+			padding: 20px;
+			flex-direction: column;
+			align-items: stretch;
+		}
+		@media (max-width: 479px){
+			width: 335px;
+			max-width: 100%;
+			padding: 15px;
+		}
+	}
+	&__body {
+		flex: 1 1 auto;
+		@media (max-width: 767px){
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	&__title {
+		@media (max-width: 767px){
+			text-align: center;
+			font-size: 32px;
+		}
+		@media (max-width: 479px){
+			font-size: 24px;
+			text-align: left;
+		}
+	}
+	&__text {
+		margin-top: 20px;
+		@media (max-width: 767px){
+			text-align: center;
+			font-size: 18px;
+		}
+		@media (max-width: 479px){
+			font-size: 16px;
+			text-align: left;
+		}
+	}
+	&__items {
+		margin-top: 40px;
+		@media (max-width: 767px){
+			min-width: 100%;
+		}
+	}
+	&__item {
+		margin-top: 20px;
+		&:first-child{
+			margin: 0;
+		}
+	}
+	&__subtitle {
+		margin-bottom: 10px;
+	}
+	&__select {
+	}
+	&__input {
+		position: relative;
+		&::before{
+			content:'$';
+			position: absolute;
+			top: 50%;
+			left: 20px;
+			transform: translate(0, -50%);
+			font-family: 'Ubuntu';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 110%;
+			color: #FFFFFF;
+		}
+		input {
+			font-size: 20px;
+			padding: 15px 20px 15px 30px;
+		}
+		input[type="number"] {
+			-moz-appearance: textfield;
+			-webkit-appearance: textfield;
+			appearance: textfield;
+		}
+
+		input[type="number"]::-webkit-outer-spin-button,
+		input[type="number"]::-webkit-inner-spin-button {
+			display: none;
+		}
+	}
+	&__btn {
+		margin-top: 40px;
+	}
+}
+.diagram {
+	margin-left: 30px;
+	padding-bottom: 36px;
+	flex: 0 0 567px;
+	position: relative;
+	overflow: hidden;
+	@media (max-width: 1919px){
+		flex: 0 0 460px;
+	}
+	@media (max-width: 1023px){
+		margin-left: 10px;
+		flex: 0 0 360px;
+		height: 328px;
+	}
+	@media (max-width: 767px){
+		flex: 0 0 300px;
+		margin: 0;
+		margin-top: 30px;
+		padding-bottom: 46px;
+	}
+	&__items {
+		position: relative;
+		min-height: 100%;
+		background: url('../images/calculator/diagr.png') 0 0 / 100% 100% no-repeat;
+		display: flex;
+		&::before, &::after{
+			content:'';
+			position: absolute;
+			left: 0;
+			background-color: rgba(255, 255, 255, 0.2);
+			border-radius: 3px;
+		}
+		&::before{
+			width: 3px;
+			height: 100%;
+			top: 0;
+		}
+		&::after{
+			width: 100%;
+			height: 3px;
+			bottom: 0;
+		}
+	}
+	&__img {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		img {
+			width: 100%;
+			height: 100%;
+		}
+	}
+	&__item {
+		flex: 0 1 25%;
+		&.active {
+			.diagram__text {
+				opacity: 1;
+			}
+			.diagram__period {
+				background: rgba(114, 49, 255, 0.35);
+			}
+		}
+/* 		&:first-child, &:last-child{
+			.diagram__item-inner {
+				.diagram__period {
+					transform: translate(0, 100%);
+				}
+			}
+		}
+		&:first-child{
+			.diagram__item-inner {
+				.diagram__period {
+					left: 0;
+				}
+			}
+		}
+		&:last-child{
+			.diagram__item-inner {
+				.diagram__period {
+					left: auto;
+					right: 0;
+				}
+			}
+		} */
+		&-inner {
+			position: relative;
+			min-height: 100%;
+		}
+	}
+	&__period {
+		cursor: pointer;
+		position: absolute;
+		bottom: -12px;
+		left: 50%;
+		transform: translate(-50%, 100%);
+		padding: 5px 10px;
+		background: rgba(114, 49, 255, 0.15);
+		border-radius: 5px;
+		font-family: 'Ubuntu';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 12px;
+		line-height: 110%;
+		text-align: center;
+		color: #FFFFFF;
+		white-space: nowrap;
+		transition: all 0.3s ease 0s;
+		@media (max-width: 767px){
+			bottom: -20px;
+		}
+		&:hover{
+			background: rgba(114, 49, 255, 0.25);
+		}
+	}
+	&__text {
+		position: absolute;
+		top: 20px;
+		left: 20px;
+		font-family: 'Inter';
+		font-style: normal;
+		line-height: 110%;
+		color: #FFFFFF;
+		opacity: 0;
+		transition: all 0.5s ease 0s;
+		pointer-events: none;
+	}
+	&__span {
+		font-weight: 500;
+		font-size: 16px;
+	}
+	&__summ {
+		margin-top: 10px;
+		font-weight: 700;
+		font-size: 32px;
+		display: inline-block;
+	}
+}
+
+
+
+.select2 {
+	width: 100%!important;
+	.select2-selection {
+		height: 48px;
+		background: #0B0023;
+		border: 2px solid #FFFFFF;
+		border-radius: 5px;
+		.select2-selection__rendered {
+			display: flex;
+			align-items: center;
+			font-family: 'Ubuntu';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 110%;
+			color: #FFFFFF;
+			width: 100%;
+			height: 100%;
+			padding: 15px 20px;
+		}
+
+		.select2-selection__arrow {
+			width: 60px;
+			height: 100%;
+			transition: all 0.3s ease 0s;
+			b {
+				margin: 0;
+				border: none;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 20px;
+				height: 10px;
+				opacity: 0.8;
+				background: url('../images/calculator/arrow.svg') center / 100% 100% no-repeat;
+			}
+		}
+	}
+	&.select2-container--open {
+		.select2-selection {
+			border: 2px solid #7231FF;
+			border-bottom: none;
+			border-radius: 5px 5px 0 0;
+		}
+		.select2-selection__arrow {
+			transform: rotate(-180deg);
+		}
+		&.select2-container--above {
+			.select2-selection {
+				border: 2px solid #7231FF;
+				border-top: none;
+				border-radius: 5px 5px 0 0;
+			}
+		}
+	}
+}
+
+.select2-dropdown {
+	border: 2px solid #7231FF;
+	border-radius: 0 0 5px 5px;
+	background: #0B0023;
+	&.select2-dropdown--above {
+		border-radius: 5px 5px 0 0;
+		
+	}
+	.select2-results {
+		ul.select2-results__options {
+			max-height: 350px;
+			li.select2-results__option {
+				height: 48px;
+				padding: 15px 20px;
+				font-family: 'Ubuntu';
+				font-style: normal;
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 110%;
+				color: #FFFFFF;
+				background-color: transparent;
+			}
+		}
+	}
+}
+.select2-container {
+	.select2-search {
+		display: none;
+	}
+}

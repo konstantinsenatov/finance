@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Krona+One&amp;family=Ubuntu:wght@500;700&amp;display=swap" attr>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css">
+    <link href="css/main.min.css" rel="stylesheet">
+    <title>Главная</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header"> 
+        <div class="header__container container"> 
+          <div class="logo"> <img src="images/logo.svg" alt="alt"></div>
+          <nav class="menu">
+            <ul class="menu__list">
+              <li class="menu__item"> <a class="menu__link click" href="#cards">Описание</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#steps">Получить</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#calculator">Калькулятор</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#partners">Партнеры</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#order">Карта</a></li>
+            </ul>
+          </nav>
+          <select class="header__lang"> 
+            <option>RU</option>
+            <option>EN</option>
+          </select>
+        </div>
+      </header>
+      <div class="popap">
+        <div class="popap__back"></div>
+        <div class="popap__container"> <img class="circle-back-p" src="images/p.png" alt="alt">
+          <div class="popap__content"> 
+            <div class="popap__title title">Получите мгновенно и бесплатно</div>
+            <div class="popap__text text3">Так же, как и пластиковая карта White finance, ее выдача зависит от нас. Если у вас есть как пластиковая, так и виртуальная карта, вы все равно платите единый сбор.</div>
+            <div class="popap__subtitle">Оставте свой E-mail для получения карты</div>
+            <form class="popap__form" action="#">
+              <div class="popap__input input"> 
+                <input type="text" name="popap-email" placeholder="Ваш Email...">
+              </div>
+              <button class="popap__btn btn">Получить карту </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <main class="main">
+        <section class="hero">
+          <div class="hero__back-left"> <img src="images/hero/back-left.png" alt="alt"></div>
+          <div class="hero__back-right"> <img src="images/hero/back-right.png" alt="alt"></div>
+          <div class="hero__back-bottom-mob"> <img src="images/hero/back-bottom-mob.svg" alt="alt"></div>
+          <div class="hero__container container">
+            <div class="hero__body">
+              <div class="hero__title"><span>White finance </span>первая в России платежная система позволяющия  совершать покупки в криптовалюте</div>
+              <div class="hero__text text1">Выгодно и быстро обменивайте криптовалюту через наш сервис используя новейшие технологии блокчейн индустрии</div>
+              <form class="hero__form" action="#">
+                <div class="hero__form-input input"> 
+                  <input type="text" name="hero-email" placeholder="Ваш Email...">
+                </div>
+                <button class="hero__form-btn btn">Получить карту</button>
+              </form>
+            </div>
+            <div class="hero__img">
+              <div class="hero__img-inner ibg"><img src="images/hero/hero-img.png" alt="alt"></div>
+            </div>
+            <div class="hero__img-mob ibg"><img src="images/hero/hero-img-mob.png" alt="alt"></div>
+          </div>
+        </section>
+        <section class="cards" id="cards">
+          <div class="container"> 
+            <div class="cards__row"> 
+              <div class="cards__card-wrapper"><img src="images/cards/1.png" alt="alt">
+                <div class="cards__card card"> 
+                  <div class="card__title">Оплачивай</div>
+                  <div class="card__text text3">Получите бесплатную виртуальную карту всего за несколько минут</div>
+                </div>
+              </div>
+              <div class="cards__card-wrapper"><img src="images/cards/2.png" alt="alt">
+                <div class="cards__card card"> 
+                  <div class="card__title">Храни</div>
+                  <div class="card__text text3">Снимайте наличные в<br>банкоматах в 200+ странах мира</div>
+                </div>
+              </div>
+              <div class="cards__card-wrapper"><img src="images/cards/3.png" alt="alt">
+                <div class="cards__card card"> 
+                  <div class="card__title">Бери</div>
+                  <div class="card__text text3">Получайте кешбкек в крипте</div>
+                </div>
+              </div>
+              <div class="cards__card-wrapper"><img src="images/cards/4.png" alt="alt">
+                <div class="cards__card card"> 
+                  <div class="card__title">Конвертируй</div>
+                  <div class="card__text text3">Совершайте покупки онлайн и офлайн в розничных магазинах по всему миру</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="block">
+          <div class="container"> 
+            <div class="items"> 
+              <div class="item">
+                <div class="item__body"> 
+                  <div class="item__title title">Зарабатывайте 20% на криптовалюте</div>
+                  <div class="item__text text2">Заставьте ваши бездействующие цифровые активы работать на вас с White finance. Начните зарабатывать до 20% годовых, выплачиваемых ежедневно.</div>
+                </div>
+                <div class="item__img"> 
+                  <div class="item__img-inner"><img src="images/block1/1.png" alt="alt"></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__body"> 
+                  <div class="item__title title">Карта White finance</div>
+                  <div class="item__text text2">Подайте заявку на виртуальную карту White finance и получите самую быструю выдачу карты в истории. Пополните его прямо со своего кошелька, подключитесь к ApplePay и будьте готовы платить в любом месте и в любое время.</div>
+                </div>
+                <div class="item__img"> 
+                  <div class="item__img-inner"><img src="images/block1/2.png" alt="alt"></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__body"> 
+                  <div class="title">Выводите криптовалюту в любое время и мгновенно</div>
+                  <div class="item__text text2">Всякий раз, когда вам нужны дополнительные наличные, используйте White finance чтобы отправить криптовалюту прямо на ваши карты за считанные секунды.</div>
+                </div>
+                <div class="item__img"> 
+                  <div class="item__img-inner"><img src="images/block1/3.png" alt="alt"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="steps" id="steps">
+          <div class="container">
+            <div class="steps__title title"> <span>Простые шаги </span>для получения вашей карты</div>
+          </div>
+          <div class="steps__container">
+            <div class="steps__line"> </div>
+            <div class="steps__items">
+              <div class="item-steps item-steps-1">
+                <div class="item-steps__inner-wrapper">
+                  <div class="item-steps__icon"> <img src="images/steps/11.svg" alt="alt"></div>
+                  <div class="item-steps__inner">
+                    <div class="item-steps__num">1</div>
+                    <div class="item-steps__descr text1">Создайте свой<br> кошелек</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-steps item-steps-2">
+                <div class="item-steps__inner-wrapper item-steps__inner-wrapper--r">
+                  <div class="item-steps__icon"> <img src="images/steps/11.svg" alt="alt"></div>
+                  <div class="item-steps__inner">
+                    <div class="item-steps__num">2</div>
+                    <div class="item-steps__descr text1">Выберите<br> предпочитаемый тип<br> карты</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-steps item-steps-3">
+                <div class="item-steps__inner-wrapper">
+                  <div class="item-steps__icon"> <img src="images/steps/11.svg" alt="alt"></div>
+                  <div class="item-steps__inner">
+                    <div class="item-steps__num">3</div>
+                    <div class="item-steps__descr text1">Заполните свои данные<br> и оплатите доставку</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-steps item-steps-4">
+                <div class="item-steps__inner-wrapper">
+                  <div class="item-steps__icon"> <img src="images/steps/11.svg" alt="alt"></div>
+                  <div class="item-steps__inner">
+                    <div class="item-steps__num">4</div>
+                    <div class="item-steps__descr text1">Подтвердите свою<br> личность и получите<br> одобрение в считанные<br> минуты</div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-steps item-steps-5">
+                <div class="item-steps__inner-wrapper">
+                  <div class="item-steps__icon"> <img src="images/steps/11.svg" alt="alt"></div>
+                  <div class="item-steps__inner">
+                    <div class="item-steps__num">5</div>
+                    <div class="item-steps__descr text1">Активируйте свою карту<br> и отправляйтесь за<br> покупками!</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="calculator" id="calculator"><img class="circle-back-v" src="images/v.png" alt="alt"><img class="circle-back-b" src="images/b.png" alt="alt">
+          <div class="calculator__container">
+            <div class="calculator__body"> 
+              <div class="calculator__title title">Рассчитайте свой крипто-доход</div>
+              <div class="calculator__text text2">Выберите монету и введите сумму, чтобы увидеть, какой процент вы могли бы получить от своих активов.</div>
+              <div class="calculator__items"> 
+                <div class="calculator__item"> 
+                  <div class="calculator__subtitle text3">Криптоактив</div>
+                  <select class="calculator__select input" name="select">
+                    <option value="1">
+                       White finance</option>
+                    <option value="2">
+                       Tether</option>
+                    <option value="3">
+                       Ethereum</option>
+                    <option value="4">
+                       Bitcoin</option>
+                  </select>
+                </div>
+                <div class="calculator__item"> 
+                  <div class="calculator__subtitle text3">Сумма пополнения</div>
+                  <div class="calculator__input input"> 
+                    <input type="number" placeholder="..." value="10000">
+                  </div>
+                </div>
+              </div>
+              <div class="calculator__btn btn-open-popap btn">Начать зарабатывать</div>
+            </div>
+            <div class="diagram">
+              <div class="diagram__items"> 
+                <div class="diagram__item">
+                  <div class="diagram__item-inner"> 
+                    <div class="diagram__period">1 месяц</div>
+                  </div>
+                  <div class="diagram__text">
+                    <div class="diagram__span">Через 1 месяц у вас будет</div>
+                    <div class="diagram__summ">
+                       $<span class="diargam__amount1">10166.666</span></div>
+                  </div>
+                </div>
+                <div class="diagram__item active"> 
+                  <div class="diagram__item-inner"> 
+                    <div class="diagram__period">1 год</div>
+                  </div>
+                  <div class="diagram__text"> 
+                    <div class="diagram__span">Через 12 месяцев у вас будет</div>
+                    <div class="diagram__summ">
+                       $<span class="diargam__amount2">12000</span></div>
+                  </div>
+                </div>
+                <div class="diagram__item">
+                  <div class="diagram__item-inner"> 
+                    <div class="diagram__period">2 года</div>
+                  </div>
+                  <div class="diagram__text"> 
+                    <div class="diagram__span">Через 24 месяцa у вас будет</div>
+                    <div class="diagram__summ">
+                       $<span class="diargam__amount3">14000</span></div>
+                  </div>
+                </div>
+                <div class="diagram__item">
+                  <div class="diagram__item-inner"> 
+                    <div class="diagram__period">3 года</div>
+                  </div>
+                  <div class="diagram__text"> 
+                    <div class="diagram__span">Через 36 месяцев у вас будет</div>
+                    <div class="diagram__summ">
+                       $<span class="diargam__amount4">16000</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="safety"> <img class="circle-back-p" src="images/p.png" alt="alt">
+          <div class="container"> 
+            <div class="safety__row"> 
+              <div class="safety__body"> 
+                <div class="safety__title title">Получайте средства мгновенно. Сохраняйте свою криптовалюту</div>
+                <div class="safety__text text2">Занимайте без продажи своей криптовалюты по ставкам, начинающимся с 0% годовых. Просто пополните счет, и ваша кредитная линия будет доступна немедленно.</div>
+              </div>
+              <div class="safety__img"> 
+                <div class="safety__img-inner ibg"><img src="images/safety/1.png" alt="alt"></div>
+              </div>
+              <div class="safety__body"> 
+                <div class="safety__title title">Оставайтесь цифровыми, оставайтесь в безопасности</div>
+                <div class="safety__text text2">Дополнительный уровень безопасности для всех ваших онлайн-транзакций. Простой, но эффективный способ защитить себя от мошенников</div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="partners" id="partners">
+          <div class="container"> 
+            <div class="partners__title title">Наши партнеры</div>
+            <div class="partners__items"> 
+              <div class="partners__row"> 
+                <div class="partners__item partners__item1"> <img src="images/partners/1.svg" alt="alt"></div>
+                <div class="partners__item partners__item2"> <img src="images/partners/2.svg" alt="alt"></div>
+                <div class="partners__item partners__item3"> <img src="images/partners/3.svg" alt="alt"></div>
+                <div class="partners__item partners__item4"> <img src="images/partners/4.svg" alt="alt"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="block block2">
+          <div class="container"> 
+            <div class="items"> 
+              <div class="item">
+                <div class="item__body"> 
+                  <div class="item__title title">Отправляйте деньги куда угодно бесплатно</div>
+                  <div class="item__text text2">Вам нужен только номер телефона получателя и ваш WFC кошелек для перевода криптовалюты на международном уровне. Получатели получают деньги, даже если у них еще нет приложения. Никаких сборов. Никакого ожидания. Никаких ограничений.</div>
+                </div>
+                <div class="item__img"> 
+                  <div class="item__img-inner"><img src="images/block2/1.png" alt="alt"></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__body"> 
+                  <div class="item__title title">Cамый быстрый способ вывести криптовалюту</div>
+                  <div class="item__text text2">Получите доступ к своим деньгам за считанные секунды, обналичив свои криптовалюты на любую из ваших карт. Мгновенная доставка гарантирована.</div>
+                </div>
+                <div class="item__img"> 
+                  <div class="item__img-inner"><img src="images/block2/2.png" alt="alt"></div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__body"> 
+                  <div class="title">Самый простой и быстрый способ купить криптовалюту</div>
+                  <div class="item__text text2">Кошелек взимает комиссию 0% с вашей первой покупки криптовалюты, когда вы платите любым фиатом с вашей карты Visa или MasterCard. И все последующие покупки несут невероятно крошечную комиссию</div>
+                </div>
+                <div class="item__img"> 
+                  <div class="item__img-inner"><img src="images/block2/3.png" alt="alt"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="order" id="order">
+          <div class="container">
+            <div class="order__title title">Закажи карту прямо сейчас</div>
+            <form class="order__form" action="#">
+              <div class="order__input input"> 
+                <input type="text" name="order-email" placeholder="Ваш Email...">
+              </div>
+              <button class="order__btn btn">Получить карту</button>
+            </form>
+          </div>
+        </section>
+      </main>
+      <footer class="footer"> 
+        <div class="footer__container container"> 
+          <div class="logo"> <img src="images/logo.svg" alt="alt"></div>
+          <nav class="footer__menu menu">
+            <ul class="menu__list">
+              <li class="menu__item"> <a class="menu__link click" href="#cards">Описание</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#steps">Получить</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#calculator">Калькулятор</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#partners">Партнеры</a></li>
+              <li class="menu__item"> <a class="menu__link click" href="#order">Карта</a></li>
+            </ul>
+          </nav>
+          <select class="footer__lang"> 
+            <option>RU</option>
+            <option>EN</option>
+          </select>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"> </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js"> </script>
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

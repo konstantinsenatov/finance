@@ -1,0 +1,29 @@
+/* base */
+@import "base/var";
+@import "base/reset";
+@import "base/fonts";
+
+/* mixin */
+@import "base/mixin";
+
+/*libs*/
+
+
+/* main */
+@import "partials/main";
+
+/* components */
+@import "partials/header";
+@import "partials/footer";
+
+
+/*blocks*/
+@import "blocks/hero";
+@import "blocks/cards";
+@import "blocks/block";
+@import "blocks/steps";
+@import "blocks/safety";
+@import "blocks/partners";
+@import "blocks/order";
+@import "blocks/calculator";
+@import "blocks/popap";

@@ -1,0 +1,58 @@
+section.calculator#calculator
+	img(src="images/v.png", alt="alt").circle-back-v
+	img(src="images/b.png", alt="alt").circle-back-b
+	.calculator__container
+		.calculator__body 
+			.calculator__title.title Рассчитайте свой крипто-доход
+			.calculator__text.text2 Выберите монету и введите сумму, чтобы увидеть, какой процент вы могли бы получить от своих активов.
+			.calculator__items 
+				.calculator__item 
+					.calculator__subtitle.text3 Криптоактив
+					select(name="select").calculator__select.input
+						option(value="1") 
+							|White finance
+						option(value="2") 
+							|Tether
+						option(value="3") 
+							|Ethereum
+						option(value="4") 
+							|Bitcoin
+				.calculator__item 
+					.calculator__subtitle.text3 Сумма пополнения
+					.calculator__input.input 
+						input(type="number" placeholder="..." value="10000")
+			.calculator__btn.btn-open-popap.btn Начать зарабатывать
+		.diagram
+			.diagram__items 
+				.diagram__item
+					.diagram__item-inner 
+						.diagram__period 1 месяц
+					.diagram__text
+						.diagram__span Через 1 месяц у вас будет
+						.diagram__summ 
+							|$
+							span.diargam__amount1 10166.666
+				.diagram__item.active 
+					.diagram__item-inner 
+						.diagram__period 1 год
+					.diagram__text 
+						.diagram__span Через 12 месяцев у вас будет
+						.diagram__summ 
+							|$
+							span.diargam__amount2 12000
+				.diagram__item
+					.diagram__item-inner 
+						.diagram__period 2 года
+					.diagram__text 
+						.diagram__span Через 24 месяцa у вас будет
+						.diagram__summ 
+							|$
+							span.diargam__amount3 14000
+				.diagram__item
+					.diagram__item-inner 
+						.diagram__period 3 года
+					.diagram__text 
+						.diagram__span Через 36 месяцев у вас будет
+						.diagram__summ 
+							|$
+							span.diargam__amount4 16000

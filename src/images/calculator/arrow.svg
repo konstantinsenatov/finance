@@ -1,0 +1,6 @@
+<svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.8">
+<line x1="1.41421" y1="1" x2="10" y2="9.58579" stroke="white" stroke-width="2" stroke-linecap="round"/>
+<line x1="1" y1="-1" x2="13.1421" y2="-1" transform="matrix(-0.707107 0.707107 0.707107 0.707107 20 1)" stroke="white" stroke-width="2" stroke-linecap="round"/>
+</g>
+</svg>

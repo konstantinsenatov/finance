@@ -1,0 +1,33 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	padding: 20px 0;
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__menu {
+	}
+	&__lang {
+		cursor: pointer;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 120%;
+		text-align: center;
+		letter-spacing: -0.04em;
+		color: #FFFFFF;
+		background-color: transparent;	
+		option {
+			cursor: pointer;
+		}
+	}
+}
+

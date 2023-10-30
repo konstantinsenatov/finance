@@ -1,0 +1,120 @@
+.cards {
+	margin-top: 65px;
+	@media (max-width: 1023px){
+		margin-top: 40px;
+	}
+	&__row {
+		display: flex;
+		margin: 0 -15px;
+		@media (max-width: 1023px){
+			flex-wrap: wrap;
+			margin: 0 47px;
+			margin-top: -64px;
+		}
+		@media (max-width: 767px){
+			margin: -20px -10px 0;
+		}
+		@media (max-width: 320px){
+			
+		}
+	}
+	&__card {
+		background: #03010F;
+		backdrop-filter: blur(5px);
+		border-radius: 5px;
+		min-height: 100%;
+
+		&-wrapper {
+			flex: 0 1 25%;
+			padding: 0 15px;
+			position: relative;
+			min-height: 100%;
+			@media (max-width: 1023px){
+				flex: 0 1 50%;
+				margin-top: 64px;
+			}
+			@media (max-width: 767px){
+				margin-top: 20px;
+				padding: 0 10px;
+			}
+			@media (max-width: 479px){
+				flex: 1 1 100%;
+			}
+			>img {
+				width: 200px;
+				height: 200px;
+				position: absolute;
+				z-index: 9;
+				top: -71px;
+				right: 0;
+				@media (max-width: 1919px){
+					top: -63px;
+					right: -30px;
+				}
+				@media (max-width: 1439px){
+					top: -46px;
+					width: 136px;
+					height: 136px;
+				}
+				@media (max-width: 1023px){
+					top: -63px;
+					width: 200px;
+					height: 200px;
+				}
+				@media (max-width: 767px){
+					top: -46px;
+					width: 136px;
+					height: 136px;
+					right: -26px;
+				}
+				@media (max-width: 479px){
+					top: -63px;
+					width: 200px;
+					height: 200px;
+					right: -25px;
+				}
+			}
+		}
+	}
+}
+.card {
+	position: relative;
+	padding: 65px 10px 10px;
+	overflow: hidden;
+	@media (max-width: 1439px){
+		padding: 32px 10px 10px;
+	}
+	@media (max-width: 1023px){
+		padding: 85px 10px 10px;
+	}
+	@media (max-width: 767px){
+		padding: 32px 15px 10px 10px;
+	}
+	@media (max-width: 479px){
+		padding: 85px 10px 10px;
+	}
+	&::before{
+		content:'';
+		position: absolute;
+		bottom: 12px;
+		right: 25px;
+		width: 150px;
+		height: 150px;
+		background: #7231FF;
+		filter: blur(50px);
+	}
+	&__title {
+		position: relative;
+		font-family: 'Ubuntu';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 110%;
+		color: #F10160;
+	}
+	&__text {
+		position: relative;
+		margin-top: 10px;
+	}
+
+}

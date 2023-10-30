@@ -1,0 +1,38 @@
+.footer {
+	margin-top: 80px;
+	padding: 20px 0;
+	@media (max-width: 1024px){
+		margin-top: 40px;
+	}
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__menu {
+		@media (max-width: 767px){
+			display: none;
+		}
+	}
+	&__lang {
+		display: none;
+		cursor: pointer;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		font-family: 'Inter';
+		font-style: normal;
+		font-weight: 500;
+		font-size: 16px;
+		line-height: 120%;
+		text-align: center;
+		letter-spacing: -0.04em;
+		color: #FFFFFF;
+		background-color: transparent;
+		@media (max-width: 767px){
+			display: block;
+		}	
+		option {
+			cursor: pointer;
+		}
+	}
+}
